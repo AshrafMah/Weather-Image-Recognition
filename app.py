@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 
 app = Flask(__name__)
 
-model = load_model(r'best_model_.h5', compile=False)
+model = load_model(r'model/best_model_.h5', compile=False)
 
 def get_className(classNo):
     if classNo==0:
@@ -95,3 +95,5 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+    
